@@ -47,7 +47,6 @@ Una vez tengamos el directorio, crearemos la nueva feature **contenidoHTML** con
 ![Feature contenidoHTML](/images/image21.png)
 
 Craremos el archivo **modifyHTML.html** y le añadiremos el contenido necesario.
-![Git flow start contenidoHTML](/images/image8.png)
 
 Una vez tengamos la funcionalidad acabada haremos un *git add* con los ficheros modificados.
 ![git add contenidoHTML](/images/image2.png)
@@ -129,3 +128,29 @@ Y realizaremos un *git push* para guardar los cambios en remoto.
 ![git push origin v1.0](/images/image9.png)
 
 Y con esto es trabajo del usuario 3 estaría acabado.
+
+### Segunda parte del usuario 1
+
+El usuario 1 va a realizar una serie de mejoras a las funcionalidades del usuario2. Para ello empezaremos realizando un git pull para traerse todos los cambios en remoto.
+![git pull origin master usuario1](/images/image22.png)
+
+Ahora crearemos la rama de **hotfix** con el comando *git flow hotfix start mejorasV_1_0*.
+![git flow hotfix start mejorasV_1_0](/images/image17.png)
+
+Y realizaremos los cambios necesarios.
+![Cambios en contenidoHTML.html](/images/image8.png)
+
+Cuando hayamos finalizado con los cambios ejecutaremos el comando *git add* para confirmarlos.
+![git add contenidoHTMl.html](/images/image14.png)
+
+Y subiremos los cambios con el comando *git commmit*.
+![git commit correcciones usuario1](/images/image18.png)
+
+Con el comando *git push* añadiremos los cambios en remoto.
+![git push mejoras V_1_0](/images/image44.png)
+
+Cuando hayamos finalizado con el hotfix ejecutaremos el comando *git flow hotfix finish mejorasV_1_0*.
+![git flow hotfix finish mejorasV_1_0](/images/image20.png)
+
+Y realizaremos un *git push* para guardar los cambios en remoto.
+![git push hotfix](/images/image42.png)
